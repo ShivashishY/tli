@@ -17,6 +17,7 @@ export default function BlogIndex({ data, ...props }) {
     <Layout>
       <Helmet title={`Blog | ${config.siteTitle}`} />
       <SEO customDescription="Blogs, tutorials, codelabs, snippets, rants and everything else." />
+      
       <header>
         <div className="container">
           <h1>Blogs</h1>

@@ -139,6 +139,31 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `tli.gtsb.io`,
+              short_name: `TLI`,
+              start_url: `/`,
+              background_color: `#FFF`,
+              theme_color: `#FAE042`,
+              display: 'minimal-ui',
+              icons: [
+                {
+            src: '/favicon/favicon-48.png',
+            sizes: '48x48',
+            type: 'image/png',
+          },
+          {
+            src: '/favicon/favicon-1024.png',
+            sizes: '1024x1024',
+            type: 'image/png',
+          },
+        ],
+            },
+          },
+  
+          
+          {
             resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'language-',
@@ -203,3 +228,5 @@ module.exports = {
     },
   ],
 }
+
+plugins: [`gatsby-plugin-offline`]

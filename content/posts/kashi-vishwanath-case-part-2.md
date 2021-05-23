@@ -16,7 +16,7 @@ tags:
 -   Religion
 -   Hindus
 -   tech
-thumbnail: '../thumbnails/vishwanath2.png'
+
 ---
 
 <!-- more -->
