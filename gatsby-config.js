@@ -161,7 +161,12 @@ module.exports = {
         ],
             },
           },
-  
+          {
+            resolve: `gatsby-plugin-offline`,
+            options: {
+              precachePages: [`/`, `/blog/*`],
+            },
+          },
           
           {
             resolve: 'gatsby-remark-prismjs',
@@ -229,4 +234,3 @@ module.exports = {
   ],
 }
 
-plugins: [`gatsby-plugin-offline`]

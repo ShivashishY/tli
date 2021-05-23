@@ -12,3 +12,5 @@ exports.onInitialClientRender = () => {
     head.appendChild(link)
   }
 }
+
+
