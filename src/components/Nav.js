@@ -19,7 +19,7 @@ export default function Nav() {
             <Link to="/blog">Blogs</Link>
             <Link to="/guides">Facts</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">🤙</Link>
             <button
               id="dark-mode-button"
               onClick={(event) => {

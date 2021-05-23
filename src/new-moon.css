@@ -310,3 +310,7 @@ code[class*='language-'] ::selection {
   color: inherit;
   background: rgba(150, 150, 150, 0.3) !important;
 }
+
+.namefooter {
+  text-align: center;
+} 
