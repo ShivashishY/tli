@@ -11,18 +11,26 @@ import SEO from '../components/SEO'
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
 import {
+  EmailShareButton,
   FacebookShareButton,
   LinkedinShareButton,
-  TwitterShareButton,
+  PinterestShareButton,
+  PocketShareButton,
   RedditShareButton,
+  TelegramShareButton,
   TumblrShareButton,
-  EmailShareButton,
-  FacebookIcon,
-  TwitterIcon,
-  RedditIcon,
-  LinkedinIcon,
-  TumblrIcon,
-  EmailIcon
+  TwitterShareButton,
+  WhatsappShareButton,
+  WorkplaceShareButton,
+   FacebookIcon,
+    TwitterIcon,
+    RedditIcon,
+    LinkedinIcon,
+    TumblrIcon,
+    EmailIcon,
+    WhatsappIcon,
+    TelegramIcon,
+    PocketIcon
 } from "react-share";
 
 export default function PostTemplate({ data, pageContext }) {
@@ -31,7 +39,7 @@ export default function PostTemplate({ data, pageContext }) {
   const { tags, thumbnail, title, description, date } = post.frontmatter
   const baseUrl = 'https://tli.gtsb.io/'
   
-  const shareIconSize = 32;
+  const shareIconSize = 33;
 
   return (
     <Layout>
@@ -89,9 +97,66 @@ export default function PostTemplate({ data, pageContext }) {
       </div>
       <div className="share-label"><h4>Share this post:</h4></div>
                     <div className="share-icons">
-                    <FacebookShareButton url={baseUrl + pageContext.slug} title={title}>
-     <FacebookIcon size={32} round />
-</FacebookShareButton>
+                    <FacebookShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Twitter share button"}}
+                        >
+                            <FacebookIcon round size={shareIconSize} />
+                        </FacebookShareButton>
+
+
+                    <TwitterShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Twitter share button"}}
+                        >
+                            <TwitterIcon round size={shareIconSize}/>
+                        </TwitterShareButton>
+                        <LinkedinShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "LinkedIn share button"}}
+                        >
+                            <LinkedinIcon round size={shareIconSize}/>
+                        </LinkedinShareButton>
+                        <RedditShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Reddit share button"}}
+                        >
+                            <RedditIcon round size={shareIconSize}/>
+                        </RedditShareButton>
+                        <TumblrShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Tumblr share button"}}
+                        >
+                            <TumblrIcon round size={shareIconSize}/>
+                        </TumblrShareButton>
+
+                        <EmailShareButton
+                           url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Share by email button"}}
+                        >
+                            <EmailIcon round size={shareIconSize}/>
+                        </EmailShareButton>
+
+                        <WhatsappShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Share by whatsapp button"}}
+                        >
+                            <WhatsappIcon round size={shareIconSize}/>
+                        </WhatsappShareButton>
+
+                        <TelegramShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Share by whatsapp button"}}
+                        >
+                            <TelegramIcon round size={shareIconSize}/>
+                        </TelegramShareButton>
+                        <PocketShareButton
+                            url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Share by whatsapp button"}}
+                        >
+                            <PocketIcon round size={shareIconSize}/>
+                        </PocketShareButton>
+
                     </div>
      
     </Layout>

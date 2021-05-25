@@ -149,3 +149,28 @@ blockquote {
   background: yellow;
   color: black;
 }
+
+.share-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+   height: 5px;
+}
+.share-icons button {
+  margin: 0.25rem;
+}
+
+
+.share-label, .notification-link {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+
+.share-label {
+  margin-top: 2rem;
+  font-weight: bold;
+  
+  
+}
+
