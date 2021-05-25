@@ -1,6 +1,6 @@
 ---
 date: 2021-05-18
-title: Cow's Milk is Toxic and Slow Posion
+title: Cow's Milk is Toxic and Slow Poison
   
 slug: cow-milk-is-toxic
 template: post

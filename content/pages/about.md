@@ -9,7 +9,7 @@ Hello to all! 👋🏽
 
 Nice to see you here! You have landed on The Lazy Indian Blog website.
 
-I believe technology can help change human lives in a positive way! so that's why i created this website to share information which you have never seen or hard and views on current worldwide situation.
+I believe technology can help change human lives in a positive way! So that's Why I created this website to share information which you have never seen or hard and views on current worldwide situation.
 
 ![Me](../images/The_Lazy_Indian.png)
 

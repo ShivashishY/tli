@@ -17,7 +17,6 @@ tags:
 -   Religion
 -   Hindus
 -   tech
-thumbnail: '../thumbnails/vishwanath1.png'
 ---
 
 
@@ -64,4 +63,4 @@ Page No  29 Last Paragraph
 माँ श्रृंगार गौरी आज भी मस्जिद के पश्चिम दिशा में है जिसकी पूजा की जाती है। 
 स्कन्द पुराण के चैप्टर न. 99 -100 में लिखा हुआ है की  माँ श्रृंगार गौरी के पूजन के बिना आप के दर्शन विश्वेश्वर महादेव का पुरा नहीं होता यही बात  Chapter 100, Page No. 1007, Verse No 61-70 और  काशी खंड Chapter No 100 में उल्लेखित है की माँ श्रृंगार गौरी की यात्रा हर तृतीया के अमावस्या को निकाली जानी चाहिए।  इसलिए हमारे धर्म, विश्वास, आस्था के हिसाब से यह केस और स्थान अति महत्वपूर्ण है।
 
-## [Kashi Vishwanath Case. Why This case is important for Hindus? History Evidence & Importance — Part 2](https://shivasblog.gtsb.io/kashi-vishwanath-case-part-2)
+## [Kashi Vishwanath Case. Why This case is important for Hindus? History Evidence & Importance — Part 2](https://tli.gtsb.io/kashi-vishwanath-case-2/)

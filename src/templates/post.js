@@ -10,13 +10,28 @@ import SEO from '../components/SEO'
 
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  RedditIcon,
+  LinkedinIcon,
+  TumblrIcon,
+  EmailIcon
+} from "react-share";
 
 export default function PostTemplate({ data, pageContext }) {
   const post = data.markdownRemark
   const { previous, next } = pageContext
   const { tags, thumbnail, title, description, date } = post.frontmatter
+  const baseUrl = 'https://tli.gtsb.io/'
   
-  
+  const shareIconSize = 32;
 
   return (
     <Layout>
@@ -72,6 +87,15 @@ export default function PostTemplate({ data, pageContext }) {
         </article>
         <Suggested previous={previous} next={next} />
       </div>
+      <div className="share-label"><h4>Share this post:</h4></div>
+                    <div className="share-icons">
+                        <FacebookShareButton>
+                        <a href={'https:/www.facebook.com/sharer/sharer.php?u=' + baseUrl + pageContext.slug} className="Facebook" target="_blank" rel="noopener noreferrer"></a>
+                            <FacebookIcon  round size={shareIconSize} />
+                        </FacebookShareButton>
+                        
+                    </div>
+     
     </Layout>
   )
 }
