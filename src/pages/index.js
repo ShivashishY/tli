@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
-
+import ScrollToTop from "react-scroll-up"
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 
@@ -92,6 +92,9 @@ export default function BlogIndex({ data }) {
           </a>
         </Section>
       </div>
+      <ScrollToTop showUnder={160}>
+                            <span class="largefont">Top</span>
+                      </ScrollToTop>
     </Layout>
   )
 }

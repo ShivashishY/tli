@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import Suggested from '../components/Suggested'
 import SEO from '../components/SEO'
+import ScrollToTop from "react-scroll-up"
 
 
 import config from '../utils/config'
@@ -14,14 +15,12 @@ import {
   EmailShareButton,
   FacebookShareButton,
   LinkedinShareButton,
-  PinterestShareButton,
   PocketShareButton,
   RedditShareButton,
   TelegramShareButton,
   TumblrShareButton,
   TwitterShareButton,
   WhatsappShareButton,
-  WorkplaceShareButton,
    FacebookIcon,
     TwitterIcon,
     RedditIcon,
@@ -37,9 +36,10 @@ export default function PostTemplate({ data, pageContext }) {
   const post = data.markdownRemark
   const { previous, next } = pageContext
   const { tags, thumbnail, title, description, date } = post.frontmatter
-  const baseUrl = 'https://tli.gtsb.io/'
+  const baseUrl = 'https://tli.gtsb.io'
   
   const shareIconSize = 33;
+  
 
   return (
     <Layout>
@@ -158,7 +158,9 @@ export default function PostTemplate({ data, pageContext }) {
                         </PocketShareButton>
 
                     </div>
-     
+                      <ScrollToTop showUnder={160}>
+                            <span class="largefont">Top</span>
+                      </ScrollToTop>
     </Layout>
   )
 }

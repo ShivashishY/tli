@@ -9,6 +9,7 @@ import Footer from './Footer'
 import '../style.css'
 import '../new-moon.css'
 
+
 export default function Layout({ children }) {
   return (
     <>

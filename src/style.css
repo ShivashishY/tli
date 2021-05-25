@@ -742,7 +742,7 @@ main {
 /* Footer */
 
 .footer {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .footer > .flex {
@@ -1264,4 +1264,51 @@ kbd {
   
 }
 
+.lets-connect {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
 
+
+
+.largefont {
+  position: relative;
+  background-color: #7B68EE;
+  color: white;
+  border: none;
+  padding: 20px;
+  font-size: large;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.largefont:hover{
+ background: white;
+ box-shadow:0px 2px 10px 5px red;
+ color: black;
+}
+
+.largefont:after {
+  content: "";
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.largefont:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

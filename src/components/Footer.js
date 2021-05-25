@@ -11,6 +11,7 @@ export default function Footer() {
   return (
     <footer className="footer flex">
       <section className="container">
+      <div className="lets-connect"><h4>Let's connect</h4></div>
         <nav className="footer-links">
           <Link to="/blog">Blogs</Link>
           <Link to="/guides">Facts</Link>
