@@ -89,11 +89,9 @@ export default function PostTemplate({ data, pageContext }) {
       </div>
       <div className="share-label"><h4>Share this post:</h4></div>
                     <div className="share-icons">
-                        <FacebookShareButton>
-                        <a href={'https:/www.facebook.com/sharer/sharer.php?u=' + baseUrl + pageContext.slug} className="Facebook" target="_blank" rel="noopener noreferrer"></a>
-                            <FacebookIcon  round size={shareIconSize} />
-                        </FacebookShareButton>
-                        
+                    <FacebookShareButton url={baseUrl + pageContext.slug} title={title}>
+     <FacebookIcon size={32} round />
+</FacebookShareButton>
                     </div>
      
     </Layout>
