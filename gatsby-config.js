@@ -127,6 +127,14 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-scroll-indicator`,
+            options: {
+              color: '#412bc0',
+              height: '6px',
+              zIndex: `9999`,
+            },
+          },
+          {
             resolve: 'gatsby-remark-autolink-headers',
             options: {
             offsetY: '100',

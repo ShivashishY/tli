@@ -12,7 +12,6 @@ import ScrollToTop from "react-scroll-up"
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
 import {
-  EmailShareButton,
   FacebookShareButton,
   LinkedinShareButton,
   PocketShareButton,
@@ -21,14 +20,15 @@ import {
   TumblrShareButton,
   TwitterShareButton,
   WhatsappShareButton,
+  EmailShareButton,
    FacebookIcon,
     TwitterIcon,
     RedditIcon,
     LinkedinIcon,
     TumblrIcon,
-    EmailIcon,
     WhatsappIcon,
     TelegramIcon,
+    EmailIcon,
     PocketIcon
 } from "react-share";
 
@@ -130,13 +130,6 @@ export default function PostTemplate({ data, pageContext }) {
                             <TumblrIcon round size={shareIconSize}/>
                         </TumblrShareButton>
 
-                        <EmailShareButton
-                           url={baseUrl + pageContext.slug} title={title}
-                            additionalProps={{"aria-label": "Share by email button"}}
-                        >
-                            <EmailIcon round size={shareIconSize}/>
-                        </EmailShareButton>
-
                         <WhatsappShareButton
                             url={baseUrl + pageContext.slug} title={title}
                             additionalProps={{"aria-label": "Share by whatsapp button"}}
@@ -156,7 +149,12 @@ export default function PostTemplate({ data, pageContext }) {
                         >
                             <PocketIcon round size={shareIconSize}/>
                         </PocketShareButton>
-
+                        <EmailShareButton
+                           url={baseUrl + pageContext.slug} title={title}
+                            additionalProps={{"aria-label": "Share by email button"}}
+                        >
+                            <EmailIcon round size={shareIconSize}/>
+                        </EmailShareButton>
                     </div>
                       <ScrollToTop showUnder={160}>
                             <span class="largefont">Top</span>
