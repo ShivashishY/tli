@@ -86,7 +86,7 @@ section > h2 {
 }
 
 .section-button {
-  font-weight: 500;
+  font-weight: 400;
   background: var(--light-background);
   color: var(--dark-font-color);
   padding: 0.4rem 0.6rem;

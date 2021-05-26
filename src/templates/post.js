@@ -37,7 +37,6 @@ export default function PostTemplate({ data, pageContext }) {
   const { previous, next } = pageContext
   const { tags, thumbnail, title, description, date } = post.frontmatter
   const baseUrl = 'https://tli.gtsb.io'
-  
   const shareIconSize = 33;
   
 
@@ -64,6 +63,8 @@ export default function PostTemplate({ data, pageContext }) {
                 <div>
                   Written by <Link to="/about">The Lazy Indian</Link> on{' '}
                   <time>{date}</time>
+                  <span>&nbsp; - &nbsp;</span>
+                <span>{post.fields.readingTime.text}</span>
                 </div>
                 {tags && (
                   <div className="tags">
@@ -170,6 +171,9 @@ export const pageQuery = graphql`
       excerpt
       fields {
         slug
+        readingTime {
+          text
+        }
       }
       tableOfContents
       frontmatter {

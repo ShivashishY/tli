@@ -8,9 +8,9 @@
   --light-background: #383838;
   --lighter-background: #404040;
   --border: #404040;
-  --link-color: #412bc0;
-  --link-color-darker: #7B68EE;
-  --link-hover-color: #e1a6f2;
+  --link-color: #7B68EE;
+  --link-color-darker: #412bc0 ;
+  --link-hover-color: #babae5;
   --navbar-color: black;
   --blockquote: #2a4661;
   --transparent-text: rgba(255, 255, 255, 0.7);
@@ -40,9 +40,10 @@ a {
 a:hover {
   color: var(--link-hover-color);
   border:1px solid yellow;  
+  text-decoration: underline;
   transition: border-bottom .2s, border-left .4s, border-top .6s, border-right .9s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  font-size:105%;
+  font-size:102%;
 }
 
 a[class^='tag-'] {
