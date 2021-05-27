@@ -61,9 +61,9 @@ export default function PostTemplate({ data, pageContext }) {
               </div>
               <div className="post-meta">
                 <div>
-                  Written by <Link to="/about">The Lazy Indian</Link> on{' '}
+                  Written by <Link to="/about">The Lazy Indian</Link> ||📅{' '}
                   <time>{date}</time>
-                  <span>&nbsp; - &nbsp;</span>
+                  <span>&nbsp; - 🚀&nbsp;</span>
                 <span>{post.fields.readingTime.text}</span>
                 </div>
                 {tags && (

@@ -15,7 +15,7 @@ export default function TagTemplate({ data, pageContext }) {
   const posts = data.allMarkdownRemark.edges
   const simplifiedPosts = useMemo(() => getSimplifiedPosts(posts), [posts])
   const message = totalCount === 1 ? ' post found.' : ' posts found.'
-
+  
   return (
     <Layout>
       <Helmet title={`Posts tagged: ${tag} | ${config.siteTitle}`} />
