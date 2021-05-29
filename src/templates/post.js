@@ -7,7 +7,7 @@ import Layout from '../components/Layout'
 import Suggested from '../components/Suggested'
 import SEO from '../components/SEO'
 import ScrollToTop from "react-scroll-up"
-
+import { IoMdArrowBack } from 'react-icons/io'
 
 import config from '../utils/config'
 import { slugify } from '../utils/helpers'
@@ -46,6 +46,10 @@ export default function PostTemplate({ data, pageContext }) {
       <SEO postPath={post.fields.slug} postNode={post} postSEO />
       <div className="container">
         <article>
+        <Link className="back" to={`/blog/`}>
+            <IoMdArrowBack size={30} /> Go to all Blogs
+          </Link>
+
           <header className="article-header">
             <div className="container">
               <div className="thumb">
