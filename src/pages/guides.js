@@ -31,7 +31,7 @@ export default function BlogIndex({ data }) {
       <section>
         <div className="guides-section">
           <div className="container">
-            <Guides data={simplifiedPosts} />
+            <Guides data={simplifiedPosts} includeTime/>
           </div>
         </div>
       </section>

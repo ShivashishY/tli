@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 
 import { slugify } from '../utils/helpers'
 
-export default function Guides({ data, frontPage }) {
+export default function Guides({ data, frontPage, includeTime }) {
   const LinkType = ({ guide, children }) =>
     guide.slug ? (
       <Link to={guide.slug} className="image-link">
@@ -23,6 +23,7 @@ export default function Guides({ data, frontPage }) {
           <div className="guide" key={guide.id}>
             <div>
               <LinkType guide={guide}>
+                {includeTime && <time>{guide.date}</time>}
                 {guide.staticThumbnail ? (
                   <img
                     src={guide.staticThumbnail}
