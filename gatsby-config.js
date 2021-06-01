@@ -147,28 +147,25 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 650,
+              wrapperStyle: (fluidResult) => `max-width: none;`,
             },
           },
           {
             resolve: `gatsby-plugin-manifest`,
             options: {
-              name: `tli.gtsb.io`,
+              name: `The Lazy Indian`,
               short_name: `TLI`,
+              description:'Just Another Lazy Indian',
               start_url: `/`,
               background_color: `#FFF`,
               theme_color: `#FAE042`,
               display: 'minimal-ui',
               icons: [
                 {
-            src: '/favicon/favicon-48.png',
-            sizes: '48x48',
+            src: '/static/logo.png',
             type: 'image/png',
           },
-          {
-            src: '/favicon/favicon-1024.png',
-            sizes: '1024x1024',
-            type: 'image/png',
-          },
+        
         ],
             },
           },
