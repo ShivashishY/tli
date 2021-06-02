@@ -15,7 +15,7 @@ module.exports = {
     // ===================================================================================
     // Meta
     // ===================================================================================
-    'gatsby-plugin-robots-txt',
+    
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-twitter',
     'gatsby-plugin-sitemap',
@@ -92,6 +92,14 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/content/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.tli.gtsb.io',
+        sitemap: 'https://www.tli.gtsb.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       },
     },
     {
