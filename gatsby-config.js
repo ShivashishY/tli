@@ -18,12 +18,6 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-twitter',
-    {
-      resolve: `gatsby-plugin-plausible`,
-      options: {
-        domain: `tli.gstb.io`,
-      },
-    },
     'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-feed`,
