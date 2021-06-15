@@ -11,7 +11,6 @@ slug: tools-for-css-saving-time
 
 categories:
 -   css
--   Popular
 -   Tools
 tags:
 -   TechStudy
